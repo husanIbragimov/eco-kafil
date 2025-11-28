@@ -27,3 +27,6 @@ SENTRY_DSN = env.str("SENTRY_DSN")
 
 TITLE = env.str("TITLE", "Django Project API")
 DESCRIPTION = env.str("DESCRIPTION", "Django Project API Documentation")
+
+# 300 MB
+DATA_UPLOAD_MAX_MEMORY_SIZE = 314_572_800

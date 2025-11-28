@@ -4,6 +4,7 @@ pre-commit==4.2.0 # https://pre-commit.com/
 requests==2.32.3 # https://pypi.org/project/requests/
 tqdm==4.67.1
 pandas==2.2.3
+numpy==2.3.5
 openpyxl==3.1.5
 pillow==11.2.1
 environs==14.2.0
@@ -42,3 +43,7 @@ django-celery-beat==2.8.0
 
 #Celery monitoring https://cronitor.io/
 cronitor==4.7.1
+openmeteo_requests==1.7.4
+openmeteo_sdk==1.23.0
+requests-cache==1.2.1
+retry-requests==2.0.0

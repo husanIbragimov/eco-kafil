@@ -2,7 +2,7 @@ server {
     listen 80;  # HTTP uchun tinglash
 
     server_name 0.0.0.0; # Server nomi yoki IP manzili
-    client_max_body_size 100M;
+    client_max_body_size 200M;
 
     location /static/ {
         alias /home/USER/BASE_DIR/static/;  # Static fayllar konteyner ichida joylashgan
