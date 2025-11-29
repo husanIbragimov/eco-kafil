@@ -69,7 +69,7 @@ services:
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST}
     ports:
-      - "5678:5672"
+      - "5688:5672"
       - "15688:15672"
     networks:
       - shared_network
