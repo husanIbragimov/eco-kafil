@@ -2,8 +2,8 @@ LOCAL_APPS = [
     "apps._auth",
     "apps.common",
     "apps.upload",
-    "apps.map",
-    "apps.air_quality",
+    "apps.station",
+    "apps.weather",
 ]
 
 THIRD_PARTY_APPS = [

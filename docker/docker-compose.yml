@@ -70,7 +70,6 @@ services:
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST}
     ports:
       - "5688:5672"
-      - "15688:15672"
     networks:
       - shared_network
     volumes:
@@ -90,23 +89,6 @@ services:
       nofile:
         soft: 65536
         hard: 65536
-
-  celery:
-    build:
-      context: ..
-      dockerfile: docker/Dockerfile
-    container_name: insurance_celery
-    networks:
-      - shared_network
-    command: celery -A config worker --loglevel=INFO --concurrency=${CELERY_WORKERS:-2}
-    volumes:
-      - ./../src:/app/src
-      - ./../media:/app/media
-      - ./../logs:/app/logs
-    depends_on:
-      - redis
-    env_file:
-      - ./../.envs/.env
 
 networks:
   shared_network:

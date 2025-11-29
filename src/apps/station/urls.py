@@ -5,5 +5,5 @@ from .views import (
 )
 
 urlpatterns = [
-    path("<int:map_type>/", MapView.as_view(), name="map-detail"),
+    path("<int:map_type>/", MapView.as_view(), name="station-detail"),
 ]
