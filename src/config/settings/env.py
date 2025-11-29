@@ -9,6 +9,7 @@ env.read_env(f"{BASE_DIR.parent}/.envs/.env")
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['localhost'])
 CORS_ALLOWED_ORIGINS = env.list('CORS_ALLOWED_ORIGINS', default=['http://localhost:8000'])
+print(CORS_ALLOWED_ORIGINS)
 CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=['http://localhost:8000'])
 
 SECRET_KEY = env.str('SECRET_KEY', 'django-insecure')
