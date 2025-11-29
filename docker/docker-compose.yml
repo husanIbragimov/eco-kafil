@@ -43,7 +43,7 @@ services:
     volumes:
       - ./.volumes/pgdata:/var/lib/postgresql/data
     ports:
-      - "5439:5432"
+      - "5438:5432"
 
     networks:
       - shared_network
@@ -53,7 +53,7 @@ services:
     container_name: insurance_redis
     restart: always
     ports:
-      - "6379:6379"
+      - "6378:6379"
     networks:
       - shared_network
     command: ["redis-server", "--appendonly", "yes"]
@@ -69,8 +69,8 @@ services:
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_DEFAULT_VHOST}
     ports:
-      - "5672:5672"
-      - "15682:15672"
+      - "5678:5672"
+      - "15688:15672"
     networks:
       - shared_network
     volumes:
