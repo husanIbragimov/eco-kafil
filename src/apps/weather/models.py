@@ -1,3 +1,5 @@
+from datetime import date as _date
+
 from django.db import models
 
 from apps.station.models import Station
@@ -15,6 +17,7 @@ class Weather(models.Model):
     aqi = models.FloatField(default=0)
     station_name = models.CharField(max_length=255, blank=True, null=True)
     station = models.ForeignKey(Station, on_delete=models.CASCADE, related_name="weather", blank=True, null=True)
+    date = models.DateField(default=_date.today)
 
     def __str__(self):
         return f"{self.id}"
