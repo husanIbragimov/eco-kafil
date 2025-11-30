@@ -12,4 +12,5 @@ urlpatterns = [
     path("upload/", include(("apps.upload.urls", "upload"), namespace="upload")),
     path("station/", include(("apps.station.urls", "station"), namespace="station")),
     path("weather/", include(("apps.weather.urls", "weather"), namespace="weather")),
+    path("feedback/", include(("apps.feedback.urls", "feedback"), namespace="feedback")),
 ]

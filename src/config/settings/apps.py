@@ -4,6 +4,7 @@ LOCAL_APPS = [
     "apps.upload",
     "apps.station",
     "apps.weather",
+    "apps.feedback",
 ]
 
 THIRD_PARTY_APPS = [
