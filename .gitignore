@@ -286,3 +286,4 @@ server_credentials/
 /docker/docker-compose.override.yml
 /docker/.volumes/
 assets/
+/.cache.sqlite
