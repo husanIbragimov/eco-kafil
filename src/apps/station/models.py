@@ -9,5 +9,5 @@ class Station(models.Model):
 
     def __str__(self):
         if not self.parent_id:
-            return self.name
-        return f"{self.parent.name} / {self.name}"
+            return f"{self.name} ({self.code})"
+        return f"{self.parent.name} / {self.name} ({self.code})"
