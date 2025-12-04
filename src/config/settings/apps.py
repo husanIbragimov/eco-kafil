@@ -14,6 +14,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     "drf_spectacular_sidecar",
     "django_json_widget",
+    "import_export",
 ]
 
 INSTALLED_APPS = [
